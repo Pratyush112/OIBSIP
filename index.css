@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:wght@100;300&family=Titillium+Web:ital@1&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --graditent: linear-gradient(45deg,
+            #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+
+
+
+}
+
+body {
+    min-height: 100vh;
+    background: #ddd;
+    background-image: var(--graditent);
+    background-size: 400%;
+    animation: bg-anime 5s infinite alternate;
+}
+
+@keyframes bg-anime {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    /*background-color: darkgray;*/
+}
+
+.sidebar {
+    /* background-color: salmon; */
+    position: absolute;
+    background-color: rgb(138, 132, 132);
+    padding: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    background: transparent;
+}
+
+.sidebarGo {
+    transform: translate(-441px, 0px);
+    position: absolute;
+    opacity: 0.2;
+}
+
+.sidebar nav {
+    padding: 10px;
+}
+
+.sidebar nav li {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+    padding: 18px;
+    font-weight: bold;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black
+}
+
+.main {
+    width: 85%;
+    /* background-color: #845ec2; */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.infocontainer {
+    /* background-color: yellow; */
+    height: 45vh;
+    width: 60vw;
+    margin: 155px 17rem;
+    margin-top: 155px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 25px;
+    font-family: 'Source code pro', monospace;
+    font-weight: 500;
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'Source code pro', monospace;
+    font-weight: 700;
+}
+
+.about {
+    font-size: 20px;
+    font-family: 'Source code pro', monospace;
+    font-weight: 500;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button button {
+    padding: 9px 14px;
+    border-radius: 20px;
+    color: antiquewhite;
+    background-color: rebeccapurple;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    color: rebeccapurple;
+    background-color: antiquewhite;
+}
+
+.devPic img {
+    height: 45vh;
+}
+
+.hamberger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.hamberger:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1284px) {
+    .devPic {
+        display: none;
+    }
+}
+
+.footer {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    margin: 0 0 0 0;
+    padding: 1rem 0 0 2rem;
+}
+
+.footer p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+.footer a {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer li {
+    padding: 1rem 2rem 0rem 1rem;
+    list-style: none;
+    display: inline-block;
+    text-align:center;
+}
+
+#link {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.footer img{
+    width: 2rem;
+    margin: 1rem 1rem;
+}

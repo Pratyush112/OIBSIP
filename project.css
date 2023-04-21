@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:wght@100;300&family=Titillium+Web:ital@1&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --graditent: linear-gradient(
+        45deg,
+        #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871 );
+
+
+        
+}
+
+body{
+    min-height: 100vh;
+    background: #ddd;
+    background-image: var(--graditent);
+    background-size: 400%;
+    animation: bg-anime 5s infinite alternate;
+}
+
+@keyframes bg-anime{
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.sidebar{
+    /* background-color: salmon; */
+    position:absolute;
+    background-color: rgb(138, 132, 132);
+    padding: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+    transition:transform 0.3s ease-in;
+    background: transparent;
+}
+
+.sidebarGo{
+    transform: translate(-441px, 0px);
+    position: absolute;
+    opacity: 0.2;
+}
+
+.sidebar nav{
+   padding:10px;
+}
+
+.sidebar nav li{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    list-style: none;
+    padding: 18px;
+    font-weight: bold;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color:black;
+}
+
+.hamberger{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1{
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 10PX;
+}
+
+.projects li{
+    text-decoration: none;
+    list-style:decimal;
+}
+
+.project1{
+    font-family: 'Source code pro', sans-serif;
+    /* list-style: none; */
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.project1 a{
+    text-decoration: none;
+    color:white;
+}
+
+.project2{
+    font-family: 'Source code pro', sans-serif;
+    /* list-style: none; */
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.project2 a{
+    text-decoration: none;
+    color:white;
+}
+
+.project3{
+    font-family: 'Source code pro', sans-serif;
+    /* list-style: none; */
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.project3 a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    margin: 20.5rem 0 0 0;
+    padding: 1rem 0 0 2rem;
+}
+
+.footer p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+.footer a {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.footer li{
+    padding: 1rem 2rem 0rem 1rem;
+}
+
+#link{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.footer img{
+    width: 2rem;
+    margin: 1rem 1rem;
+}
